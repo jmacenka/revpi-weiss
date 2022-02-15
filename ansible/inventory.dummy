@@ -1,0 +1,16 @@
+all:
+  hosts:
+    rpi:
+      ansible_host: 192.168.178.101
+      ansible_user: pi
+      ansible_ssh_pass:
+      ansible_sudo_pass:
+    revpi:
+      ansible_host: 192.168.178.44
+      ansible_user: pi
+      ansible_ssh_pass:
+      ansible_sudo_pass:
+  vars:
+    ansible_connection: ssh
+    ansible_hostname: revpi
+    influx_db_name: weiss
