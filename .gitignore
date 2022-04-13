@@ -1,6 +1,7 @@
 # Individual ignores by Jan Macenka
 # only credentials.dummy will be stored as refference
 credentials
+PW
 
 # Created by https://www.toptal.com/developers/gitignore/api/ansible,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=ansible,python
