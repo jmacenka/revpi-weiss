@@ -2,12 +2,12 @@
 version: '3'
 services:
   ifluxdb:
-    image: influxdb:1.5-alpine
+    image: influxdb:1.5
     container_name: influxdb
     volumes:
       - './data:/var/lib/influxdb'
     environment:
-      INFLUXDB_DB: landau
+      INFLUXDB_DB: weiss
     ports:
       - 8086:8086
     restart: always

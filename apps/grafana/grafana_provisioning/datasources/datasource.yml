@@ -8,7 +8,7 @@ datasources:
   - name: InfluxDB
     type: influxdb
     access: proxy
-    database: landau
+    database: weiss
     user: grafana
     password: grafana
     url: http://influxdb:8086

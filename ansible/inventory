@@ -1,15 +1,10 @@
 all:
   hosts:
     rpi:
-      ansible_host: 192.168.178.101
+      ansible_host: 10.1.1.238
       ansible_user: pi
       ansible_ssh_pass: raspberry
       ansible_sudo_pass: raspberry
-    revpi:
-      ansible_host: 192.168.178.44
-      ansible_user: pi
-      ansible_ssh_pass: 873xqr
-      ansible_sudo_pass: 873xqr
   vars:
     ansible_connection: ssh
     ansible_hostname: revpi
