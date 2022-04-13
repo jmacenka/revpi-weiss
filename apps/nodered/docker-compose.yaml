@@ -1,0 +1,15 @@
+---
+version: '3'
+
+services:
+  node-red:
+    build: ./node_red # Build and deploy project-data form this repo
+    container_name: node-red
+    ports:
+      - 1880:1880
+    restart: always
+
+networks:
+  default:
+    external:
+      name: data_backend

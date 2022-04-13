@@ -1,0 +1,15 @@
+apiVersion: 1
+
+deleteDatasources:
+  - name: InfluxDB
+    orgId: 1
+
+datasources:
+  - name: InfluxDB
+    type: influxdb
+    access: proxy
+    database: landau
+    user: grafana
+    password: grafana
+    url: http://influxdb:8086
+    isDefault: true

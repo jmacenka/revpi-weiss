@@ -1,0 +1,18 @@
+---
+version: '3'
+services:
+  ifluxdb:
+    image: influxdb:1.5-alpine
+    container_name: influxdb
+    volumes:
+      - './data:/var/lib/influxdb'
+    environment:
+      INFLUXDB_DB: landau
+    ports:
+      - 8086:8086
+    restart: always
+
+networks:
+  default:
+    external:
+      name: data_backend

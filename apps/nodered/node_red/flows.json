@@ -1,0 +1,405 @@
+[
+  {
+    "id": "1fd00ba28b89154e",
+    "type": "tab",
+    "label": "S7-400 to influxDB",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "80f078f2a229dd8b",
+    "type": "s7 endpoint",
+    "transport": "iso-on-tcp",
+    "address": "172.20.28.11",
+    "port": "102",
+    "rack": "0",
+    "slot": "3",
+    "localtsaphi": "01",
+    "localtsaplo": "00",
+    "remotetsaphi": "01",
+    "remotetsaplo": "00",
+    "connmode": "rack-slot",
+    "adapter": "",
+    "busaddr": "2",
+    "cycletime": "1000",
+    "timeout": "2000",
+    "name": "S7 (ISO-on-TCP)",
+    "vartable": [
+      {
+        "addr": "DB400,REAL0",
+        "name": "Tout_La1"
+      },
+      {
+        "addr": "DB400,REAL4",
+        "name": "Pout_La1"
+      },
+      {
+        "addr": "DB400,REAL8",
+        "name": "Pgas_La1"
+      },
+      {
+        "addr": "DB400,REAL12",
+        "name": "Pan1_La1"
+      },
+      {
+        "addr": "DB400,REAL16",
+        "name": "Pan2_La1"
+      },
+      {
+        "addr": "DB400,REAL20",
+        "name": "Tlag_Oben"
+      },
+      {
+        "addr": "DB400,REAL24",
+        "name": "Tlag_Unten"
+      },
+      {
+        "addr": "DB400,REAL28",
+        "name": "FS_Oil"
+      },
+      {
+        "addr": "DB400,REAL32",
+        "name": "FS_KW"
+      },
+      {
+        "addr": "DB400,REAL36",
+        "name": "Tprod_ablass"
+      },
+      {
+        "addr": "DB400,REAL40",
+        "name": "Poil_TP"
+      },
+      {
+        "addr": "DB400,REAL44",
+        "name": "TKW_TP_V"
+      },
+      {
+        "addr": "DB400,REAL48",
+        "name": "PKW_TP"
+      },
+      {
+        "addr": "DB400,REAL52",
+        "name": "TKW2_TP_R"
+      },
+      {
+        "addr": "DB400,REAL56",
+        "name": "Wasserspiegel"
+      },
+      {
+        "addr": "DB400,REAL60",
+        "name": "Tprod2_ablass"
+      },
+      {
+        "addr": "DB400,REAL64",
+        "name": "dP_VF1"
+      },
+      {
+        "addr": "DB400,REAL68",
+        "name": "dP_VF2"
+      },
+      {
+        "addr": "DB400,REAL72",
+        "name": "dP_VF3"
+      },
+      {
+        "addr": "DB400,REAL76",
+        "name": "P_SEP"
+      },
+      {
+        "addr": "DB400,REAL80",
+        "name": "T_SEP"
+      },
+      {
+        "addr": "DB400,REAL84",
+        "name": "Tin_NDVP"
+      },
+      {
+        "addr": "DB400,REAL88",
+        "name": "FS_Becken"
+      },
+      {
+        "addr": "DB400,REAL92",
+        "name": "TBP_NVDP"
+      },
+      {
+        "addr": "DB400,REAL96",
+        "name": "Pout_NVDP"
+      },
+      {
+        "addr": "DB400,REAL100",
+        "name": "NK_HT_R1"
+      },
+      {
+        "addr": "DB400,REAL104",
+        "name": "Tout_ORC"
+      },
+      {
+        "addr": "DB400,REAL108",
+        "name": "P_ORC"
+      },
+      {
+        "addr": "DB400,REAL112",
+        "name": "Tin_ORC"
+      },
+      {
+        "addr": "DB400,REAL116",
+        "name": "Bezug_kW"
+      },
+      {
+        "addr": "DB400,REAL120",
+        "name": "Einspeis_kW"
+      },
+      {
+        "addr": "DB400,REAL124",
+        "name": "dP_HF1"
+      },
+      {
+        "addr": "DB400,REAL128",
+        "name": "dP_HF2"
+      },
+      {
+        "addr": "DB400,REAL132",
+        "name": "dP_HF3"
+      },
+      {
+        "addr": "DB400,REAL136",
+        "name": "Pout_HF"
+      },
+      {
+        "addr": "DB400,REAL140",
+        "name": "Tout_HF"
+      },
+      {
+        "addr": "DB400,REAL144",
+        "name": "Qin_La2"
+      },
+      {
+        "addr": "DB400,REAL148",
+        "name": "Tout_WK"
+      },
+      {
+        "addr": "DB400,REAL152",
+        "name": "Pout_WK"
+      },
+      {
+        "addr": "DB400,REAL156",
+        "name": "dP_WK"
+      },
+      {
+        "addr": "DB400,REAL160",
+        "name": "Tin_IP"
+      },
+      {
+        "addr": "DB400,REAL164",
+        "name": "Pin_IP"
+      },
+      {
+        "addr": "DB400,REAL168",
+        "name": "Tout_IP"
+      },
+      {
+        "addr": "DB400,REAL172",
+        "name": "Pout_IP"
+      },
+      {
+        "addr": "DB400,REAL176",
+        "name": "Poil_IP1"
+      },
+      {
+        "addr": "DB400,REAL180",
+        "name": "Toil_IP1"
+      },
+      {
+        "addr": "DB400,REAL184",
+        "name": "Toil2_IP1"
+      },
+      {
+        "addr": "DB400,REAL188",
+        "name": "TKW2_IP1"
+      },
+      {
+        "addr": "DB400,REAL192",
+        "name": "Psaug_IP"
+      },
+      {
+        "addr": "DB400,REAL196",
+        "name": "Tinj_ablass2"
+      },
+      {
+        "addr": "DB400,REAL200",
+        "name": "Tinj_ablass"
+      },
+      {
+        "addr": "DB400,REAL204",
+        "name": "Tin_La2"
+      },
+      {
+        "addr": "DB400,REAL208",
+        "name": "Pin_La2"
+      },
+      {
+        "addr": "DB400,REAL212",
+        "name": "Pan_La2"
+      },
+      {
+        "addr": "DB400,REAL216",
+        "name": "Aussentemp"
+      },
+      {
+        "addr": "DB400,REAL220",
+        "name": "Qout_La1"
+      },
+      {
+        "addr": "DB400,REAL224",
+        "name": "Leistung_TP"
+      },
+      {
+        "addr": "DB400,REAL228",
+        "name": "Leistung_Uraca"
+      },
+      {
+        "addr": "DB400,REAL232",
+        "name": "Res"
+      },
+      {
+        "addr": "DB400,REAL236",
+        "name": "Res1"
+      },
+      {
+        "addr": "DB400,REAL240",
+        "name": "Res2"
+      },
+      {
+        "addr": "DB400,REAL244",
+        "name": "Res3"
+      },
+      {
+        "addr": "DB400,REAL248",
+        "name": "Res4"
+      },
+      {
+        "addr": "DB400,REAL252",
+        "name": "Res5"
+      },
+      {
+        "addr": "DB400,REAL256",
+        "name": "Res6"
+      },
+      {
+        "addr": "DB400,REAL260",
+        "name": "Res7"
+      },
+      {
+        "addr": "DB400,REAL264",
+        "name": "Res8"
+      },
+      {
+        "addr": "DB400,REAL268",
+        "name": "Res9"
+      },
+      {
+        "addr": "DB400,REAL272",
+        "name": "Res10"
+      },
+      {
+        "addr": "DB400,REAL276",
+        "name": "Res11"
+      },
+      {
+        "addr": "DB400,REAL280",
+        "name": "Res12"
+      },
+      {
+        "addr": "DB400,REAL284",
+        "name": "Res13"
+      }
+    ]
+  },
+  {
+    "id": "b485476f026810e4",
+    "type": "influxdb",
+    "hostname": "influxdb",
+    "port": "8086",
+    "protocol": "http",
+    "database": "landau",
+    "name": "Landau timeseries-database",
+    "usetls": false,
+    "tls": "",
+    "influxdbVersion": "1.x",
+    "url": "http://localhost:8086",
+    "rejectUnauthorized": true
+  },
+  {
+    "id": "254df2370dc8219f",
+    "type": "tls-config",
+    "name": "local-tls",
+    "cert": "",
+    "key": "",
+    "ca": "",
+    "certname": "",
+    "keyname": "",
+    "caname": "",
+    "verifyservercert": false
+  },
+  {
+    "id": "4c8f79e2205591ec",
+    "type": "debug",
+    "z": "1fd00ba28b89154e",
+    "name": "",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "true",
+    "targetType": "full",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 570,
+    "y": 120,
+    "wires": []
+  },
+  {
+    "id": "ece69a6bd47945a8",
+    "type": "function",
+    "z": "1fd00ba28b89154e",
+    "name": "parse Object to influxDB Format",
+    "func": "var arr = []; \n\nfor(let prop in msg.payload) {\n  let val = msg.payload[prop];\n  arr.push({\n    \"measurement\": prop,\n    \"fields\": {\n        \"value\":val\n    }\n  });\n}\n\nmsg.payload = arr; \nreturn msg; ",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 330,
+    "y": 80,
+    "wires": [["4c8f79e2205591ec", "e20c2bd07f58b275"]]
+  },
+  {
+    "id": "04f8abf1cda3874d",
+    "type": "s7 in",
+    "z": "1fd00ba28b89154e",
+    "endpoint": "80f078f2a229dd8b",
+    "mode": "all",
+    "variable": "Temp1",
+    "diff": true,
+    "name": "S7-400",
+    "x": 110,
+    "y": 80,
+    "wires": [["ece69a6bd47945a8"]]
+  },
+  {
+    "id": "e20c2bd07f58b275",
+    "type": "influxdb batch",
+    "z": "1fd00ba28b89154e",
+    "influxdb": "b485476f026810e4",
+    "precision": "",
+    "retentionPolicy": "",
+    "name": "Landau timeseries-database",
+    "database": "database",
+    "precisionV18FluxV20": "ms",
+    "retentionPolicyV18Flux": "",
+    "org": "organisation",
+    "bucket": "bucket",
+    "x": 640,
+    "y": 80,
+    "wires": []
+  }
+]
